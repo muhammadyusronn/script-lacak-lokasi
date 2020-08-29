@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Cek Lokasi Geolocation HTML5</title>
+</head>
+ 
+<body onload="getLocation()">
+
+<script>
+var view = document.getElementById("tampilkan");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        view.innerHTML = "Yah browsernya ngga support Geolocation bro!";
+    }
+}
+ function showPosition(position) {
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        let lt_post = position.coords.latitude ;
+        let long_post = position.coords.longitude;
+        var values = lt_post+','+long_post;
+        window.location.href = "ajax-test.php?lat=" + lt_post+"&long="+long_post; 
+        // var myJsonString = JSON.stringify(values);
+        // console.log(myJsonString);
+        //  // xmlhttp.onreadystatechange = respond;
+        //  xmlhttp.open("POST", "ajax-test.php", true);
+        //  xmlhttp.send(myJsonString);
+
+    // let lt_post = position.coords.latitude ;
+    // let long_post = position.coords.longitude;
+    console.log('latitude : '+lt_post+' longitude : '+long_post); 
+ }
+
+</script>
+</body>
+</html>
