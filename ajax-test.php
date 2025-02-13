@@ -24,5 +24,5 @@ $userkey = 'gnb6d0';
     ));
     $results = json_decode(curl_exec($curlHandle), true);
     curl_close($curlHandle);
-    echo "<script>alert('Notifikasi berhasil dikirim!');window.location='https://getloct.000webhostapp.com/akses.php'</script>";
+    echo "<script>alert('Notifikasi berhasil dikirim!');window.location='http://sinjay.id-apps.my.id/akses.php'</script>";
  ?>
