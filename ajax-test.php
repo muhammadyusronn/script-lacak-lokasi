@@ -4,7 +4,7 @@ $latt=$_GET['lat'];
 //echo $longg;
 $pesan='Lokasi dari user adalah Longtitude : '.$longg.' dan latitude : '.$latt;
 //echo $pesan;
-$notujuan="082186427595";
+$notujuan="6282186427595";
 $userkey = 'gnb6d0';
     $passkey = '18831kyv0o';
     $url = 'https://gsm.zenziva.net/api/sendWA/';
