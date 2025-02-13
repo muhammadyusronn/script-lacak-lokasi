@@ -6,6 +6,6 @@
 	<title>Beri akses!</title>
 </head>
 <body>
-	<a href="https://getloct.000webhostapp.com/"><h1>SILAHKAN BERI IZIN AKSES LOKASI!</h1></a>
+	<a href="http://sinjay.id-apps.my.id/"><h1>SILAHKAN BERI IZIN AKSES LOKASI!</h1></a>
 </body>
 </html>
